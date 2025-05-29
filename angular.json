@@ -23,6 +23,10 @@
             "polyfills": [
               "zone.js"
             ],
+            "allowedCommonJsDependencies": [
+              "@stomp/stompjs",
+              "sockjs-client"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -34,7 +38,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/global-shim.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
