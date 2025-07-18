@@ -1,6 +1,7 @@
 ## Config JS dependencies
 ### Install Dependencies for WebSocket
 - npm install @stomp/stompjs 
+- npm install sockjs-client
 - npm i --save-dev @types/sockjs-client
 ### add to: angular.json -> projects -> architect
     "allowedCommonJsDependencies": [
