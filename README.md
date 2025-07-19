@@ -3,7 +3,7 @@
 - npm install @stomp/stompjs 
 - npm install sockjs-client
 - npm i --save-dev @types/sockjs-client
-### add to: angular.json -> projects -> architect
+### add to: angular.json -> projects -> architect -> build -> options
     "allowedCommonJsDependencies": [
       "@stomp/stompjs",
       "sockjs-client"
@@ -12,7 +12,7 @@
 ### Create src/global-shim.js, add to file
 - window.global = window;
 
-### add to : angular.json -> projects -> architect -> script: []
+### add to : angular.json -> projects -> architect -> build -> options
     "scripts": [
       "src/global-shim.js"
     ],
